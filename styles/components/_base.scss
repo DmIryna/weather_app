@@ -1,0 +1,51 @@
+@use "colors" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%;
+  background-color: $blue-background;
+  color: $font-color-white;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 0.7rem;
+}
+
+.none {
+  display: none;
+}
+
+button {
+  width: 4.2rem;
+  height: 4.2rem;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: $whitesmoke;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

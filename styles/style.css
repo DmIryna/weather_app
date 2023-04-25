@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%;
+  background-color: #528dd1;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 0.7rem;
+}
+
+.none {
+  display: none;
+}
+
+button {
+  width: 4.2rem;
+  height: 4.2rem;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #f5f5f5;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.search-bar form {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+.search-bar form:focus-within {
+  box-shadow: 4px 2px 5px #333;
+}
+.search-bar input {
+  flex-grow: 1;
+  padding: 1rem;
+  font-size: 1.8rem;
+  width: 90%;
+  background-color: #f5f5f5;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  position: relative;
+}
+.search-bar input::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+.search-bar p {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: start;
+  margin: 10px;
+  color: #333;
+}
+
+.current-forecast {
+  background-color: #222;
+  color: #fff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  margin-top: 3rem;
+}
+.current-forecast .geo-error {
+  display: none;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.current-forecast .current-forecast__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+.current-forecast .current-forecast__container .current-temperature h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.current-forecast .current-forecast__container .current-temperature p {
+  font-size: 1.6rem;
+}
+.current-forecast .current-forecast__container .current-conditions {
+  text-align: start;
+  display: grid;
+  align-self: center;
+  grid-template-columns: 1fr 1fr;
+}
+.current-forecast .current-forecast__container .current-conditions p {
+  font-size: 1.6rem;
+}
+.current-forecast .current-forecast__container .current-conditions p:first-child {
+  font-weight: 700;
+  align-self: center;
+}
+.current-forecast .current-forecast__container .current-conditions img {
+  grid-column: 2;
+  grid-row: 1/span 2;
+  justify-self: center;
+  display: block;
+  width: 10rem;
+  height: 10rem;
+}
+
+.daily-forecast {
+  background-color: #333;
+  color: #fff;
+  flex-grow: 1;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  padding: 6rem 2rem 4rem 2rem;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.daily-forecast div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.daily-forecast div h4 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+.daily-forecast div img {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  color: #f5f5f5;
+}
+.daily-forecast div p {
+  font-size: 1.6rem;
+}
+.daily-forecast div div {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=style.css.map */

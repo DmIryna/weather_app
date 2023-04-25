@@ -1,0 +1,39 @@
+@use "./colors" as *;
+
+.search-bar {
+  form {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $whitesmoke;
+    background-color: $whitesmoke;
+    border-radius: 5px;
+
+    &:focus-within {
+      box-shadow: 4px 2px 5px $daily-forecast-color;
+    }
+  }
+
+  input {
+    flex-grow: 1;
+    padding: 1rem;
+    font-size: 1.8rem;
+    width: 90%;
+    background-color: $whitesmoke;
+    color: $font-color-grey;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    &::-webkit-search-cancel-button {
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: start;
+    margin: 10px;
+    color: $font-color-grey;
+  }
+}

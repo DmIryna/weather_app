@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forecast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="search-bar">
+        <form role="search" class="search-bar__form">
+          <label for="search-bar__text"></label>
+          <input
+            type="search"
+            id="search-bar__text"
+            placeholder="City, State, and Country"
+            role="searchbox"
+          />
+        </form>
+        <p class="search-bar__location">Selected: <span></span></p>
+      </section>
+      <section class="current-forecast">
+        <h2 class="geo-error"></h2>
+      </section>
+      <section class="daily-forecast"></section>
+    </main>
+  </body>
+</html>
