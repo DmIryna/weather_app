@@ -1,3 +1,4 @@
+import { WEATHER_API_KEY } from "./config.js"
 export const setLocationObject = (locationObj, coordsObj) => {
   const { lat, lon } = coordsObj
   locationObj.setLat(lat)
