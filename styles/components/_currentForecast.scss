@@ -18,12 +18,20 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
-    padding: 3rem 2rem;
+    padding: 2rem;
+
+    @media screen and (min-width: 460px) {
+      padding: 3rem 2rem;
+    }
 
     .current-temperature {
       h2 {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-bottom: 1rem;
+
+        @media screen and (min-width: 460px) {
+          font-size: 5rem;
+        }
       }
 
       p {
@@ -50,8 +58,13 @@
         grid-row: 1 / span 2;
         justify-self: center;
         display: block;
-        width: 10rem;
-        height: 10rem;
+        width: 8rem;
+        height: 8rem;
+
+        @media screen and (min-width: 460px) {
+          width: 10rem;
+          height: 10rem;
+        }
       }
     }
   }

@@ -9,6 +9,7 @@ import { currentLoc, geoErrorContainer } from "./main.js"
 export const displayLocation = (city) => {
   const element = document.querySelector(".search-bar__location span")
   element.textContent = city
+  element.classList.add("fade-in")
 }
 
 const clearWeatherContainer = (container) => {
@@ -34,7 +35,7 @@ export const displayCurWeather = (curWeatherObj) => {
   geoErrorContainer.style.display = "none"
 
   const markup = `
-      <div class="current-forecast__container">
+      <div class="current-forecast__container fade-in">
         <div class="current-temperature">
           <h2 class="temp"><span>${Math.round(temp)}</span>&#176;C</h2>
           <p class="feels-like">Feels like <span>${Math.round(
@@ -109,7 +110,7 @@ export const displayDailyForecast = async (locationObj, dayFunction) => {
     const { time, tempDay, tempEve, description, icon } = entry
 
     const markup = `
-      <div class="daily-forecast__container">
+      <div class="daily-forecast__container fade-in">
         <h4>${dayFunction(time)}</h4>
         <img
           src="${icon}"
